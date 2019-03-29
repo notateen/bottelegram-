@@ -20,13 +20,13 @@ $response = '';
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
 	$response = "Ciao $firstname, benvenuto! \n
-		prova con: 		come va? \n
-						stupiscimi \n
-						fammi un complimento\n";
+		prova a scrivere: 		-sono triste \n
+						-stupiscimi \n
+						-fammi un complimento\n";
 }
-elseif($text=="come va?")
+elseif($text=="sono triste")
 {
-	$response = "tutto bene";
+	$response = "non esserlo, sei forte";
 }
 elseif($text=="fammi un complimento")
 {
