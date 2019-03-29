@@ -1,8 +1,8 @@
 <?php
 
 // PARAMETRI DA MODIFICARE
-$WEBHOOK_URL = 'https://{lauravibesbot}.herokuapp.com/execute.php';
-$BOT_TOKEN = '{892311523:AAEQYHdZPrL1z-5v5c33YEkvk68cNFW06CQ
+$WEBHOOK_URL = 'https://lauravibesbot.herokuapp.com/execute.php';
+$BOT_TOKEN = '892311523:AAEQYHdZPrL1z-5v5c33YEkvk68cNFW06CQ'
 }';
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
