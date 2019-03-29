@@ -1,38 +1,60 @@
-<?php
+`<?php
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
+
 if(!$update)
 {
-  exit;
+exit;
 }
+
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
 $chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
+$senderId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
 $firstname = isset($message['chat']['first_name']) ? $message['chat']['first_name'] : "";
 $lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name'] : "";
 $username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
 $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
-$text = trim($text);
-$text = strtolower($text);
-header("Content-Type: application/json");
-$response = '';
-if(strpos($text, "/start") === 0 || $text=="ciao")
+
+$answers = array(
+"Per quanto posso vedere, sì",
+"È certo",
+"È decisamente così",
+"Molto probabilmente",
+"Le prospettive sono buone",
+"I segni indicano di sì",
+"Senza alcun dubbio",
+"Sì",
+"Sì",
+"Ci puoi contare",
+"È difficile rispondere, prova di nuovo",
+"Rifai la domanda più tardi",
+"Meglio non risponderti adesso",
+"Non posso predirlo ora",
+"Concentrati e rifai la domanda",
+"Non ci contare",
+"La mia risposta è no",
+"Le mie fonti dicono di no",
+"Le prospettive non sono buone",
+"Molto incerto"
+);
+
+$answer = '';
+
+// Verificare che l'ultimo carattere sia un punto di domanda
+if(strlen($text)>0 && substr($text, -1, 1)=='?')
 {
-	$response = "Ciao $firstname, benvenuto!";
-}
-elseif($text=="come va?")
-{
-	$response = "tutto bene";
-}
-elseif($text=="stupiscimi")
-{
-	$response = "sarà una giornata bellissima";
+// Da qui mandi la risposta
+$answer = $answers[rand(0, count($answers)-1)];
 }
 else
 {
-	$response = "Comando non valido!";
+// Da qui gli mandi "ehy fammi una domanda"
+$answer = "Per poterti rispondere, mi devi fare una domanda...";
 }
-$parameters = array('chat_id' => $chatId, "text" => $response);
+
+header("Content-Type: application/json");
+$parameters = array('chat_id' => $chatId, "text" => $answer);
 $parameters["method"] = "sendMessage";
-echo json_encode($parameters);
+echo json_encode($parameters);`
