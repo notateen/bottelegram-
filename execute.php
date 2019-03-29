@@ -30,7 +30,7 @@ elseif($text=="sono triste")
 }
 elseif($text=="fammi un complimento")
 {
-	$response = "sei bellissima";
+	$response = "sei una persona straordinaria";
 }
 elseif($text=="stupiscimi")
 {
@@ -39,7 +39,7 @@ elseif($text=="stupiscimi")
 }
 else
 {
-	$response = "Comando non valido!";
+	$response = "Scusa non ho capito sono bionda";
 }
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
