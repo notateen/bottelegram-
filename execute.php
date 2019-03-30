@@ -24,10 +24,11 @@ $answers = array (
 "Sei unapersona fantastica",
 "Le prospettive sono buone",
 "Andrà tutto per il meglio",
-"La giornata prendera una piena inaspettata",
+"La giornata prendera una piega inaspettata",
 "Mangia un gelato e tutto andrà per il meglio",
 "",
 "puoi farcela, sei una persona forte",
+"Prenditi del tempo per te, te lo meriti"
 
 );
 
@@ -43,7 +44,7 @@ $answer = $answers[rand(0, count($answers)-1)];
 else
 {
 // Da qui gli mandi "ehy fammi una domanda"
-$answer = "Per poterti rispondere chiedimi: puoi aiutarmi?";
+$answer = "Per poterti rispondere chiedimi: puoi rallegrarmi?";
 }
 
 
