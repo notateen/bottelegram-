@@ -41,10 +41,11 @@ if(strlen($text)>0 && substr($text, -1, 1)=='?')
 // Da qui mandi la risposta
 $answer = $answers[rand(0, count($answers)-1)];
 }
-else
+else 
 {
 // Da qui gli mandi "ehy fammi una domanda"
-$answer = "Per poterti rispondere chiedimi: puoi rallegrarmi?";
+$answer = "Ciao $firstname, benvenuto!\n
+Per poterti rispondere chiedimi: puoi rallegrarmi?\n";
 }
 
 
