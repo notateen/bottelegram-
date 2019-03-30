@@ -18,26 +18,17 @@ $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
 
 $answers = array (
-"Per quanto posso vedere, sì",
-"È certo",
-"È decisamente così",
-"Molto probabilmente",
+"L’unico capolavoro è vivere",
+"Sei così bell* che fa male guardarti!",
+"Sei sempre incantevole, ed i tuoi sorrisi sono i più belli e dolci che abbia mai visto!",
+"Sei unapersona fantastica",
 "Le prospettive sono buone",
-"I segni indicano di sì",
-"Senza alcun dubbio",
-"Sì",
-"Sì",
-"Ci puoi contare",
-"È difficile rispondere, prova di nuovo",
-"Rifai la domanda più tardi",
-"Meglio non risponderti adesso",
-"Non posso predirlo ora",
-"Concentrati e rifai la domanda",
-"Non ci contare",
-"La mia risposta è no",
-"Le mie fonti dicono di no",
-"Le prospettive non sono buone",
-"Molto incerto"
+"Andrà tutto per il meglio",
+"La giornata prendera una piena inaspettata",
+"Mangia un gelato e tutto andrà per il meglio",
+"",
+"puoi farcela, sei una persona forte",
+
 );
 
 header("Content-Type: application/json");
@@ -52,7 +43,7 @@ $answer = $answers[rand(0, count($answers)-1)];
 else
 {
 // Da qui gli mandi "ehy fammi una domanda"
-$answer = "Per poterti rispondere, mi devi fare una domanda...";
+$answer = "Per poterti rispondere chiedimi: puoi aiutarmi?";
 }
 
 
