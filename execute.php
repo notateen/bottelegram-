@@ -41,6 +41,14 @@ else
 {
 	$response = "Scusa non ho capito sono bionda";
 }
+elseif($text=="addio")
+{
+	$response = "te ne stai già andando?";
+}
+elseif($text=="rendimi felice")
+{
+	$response = "raggiungerai i tuoi obiettivi";
+}
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
