@@ -20,11 +20,11 @@ $text = isset($message['text']) ? $message['text'] : "";
 $answers = array (
 "L’unico capolavoro è vivere",
 "Sei così bell* che fa male guardarti!",
-"Sei sempre incantevole, ed i tuoi sorrisi sono i più belli e dolci che abbia mai visto!",
-"Sei unapersona fantastica",
+"Sei sempre incantevole, e i tuoi sorrisi sono i più belli e dolci che abbia mai visto!",
+"Sei una persona fantastica",
 "Le prospettive sono buone",
 "Andrà tutto per il meglio",
-"La giornata prendera una piega inaspettata",
+"La giornata prenderà una piega inaspettata",
 "Mangia un gelato e tutto andrà per il meglio",
 "",
 "puoi farcela, sei una persona forte",
@@ -45,7 +45,7 @@ else
 {
 // Da qui gli mandi "ehy fammi una domanda"
 $answer = "Ciao $firstname, benvenuto!\n
-Per poterti rispondere chiedimi: puoi rallegrarmi?\n";
+Non ho capito, sono un po' bionda, quindi devi chiedermi: puoi rallegrarmi?\n";
 }
 
 
