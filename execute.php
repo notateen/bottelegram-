@@ -28,7 +28,8 @@ $answers = array (
 "Mangia un gelato e tutto andrà per il meglio",
 "",
 "puoi farcela, sei una persona forte",
-"Prenditi del tempo per te, te lo meriti"
+"Prenditi del tempo per te, te lo meriti",
+"si",
 
 );
 
