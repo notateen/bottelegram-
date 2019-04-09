@@ -25,11 +25,12 @@ $answers = array (
 "Le prospettive sono buone",
 "Andrà tutto per il meglio",
 "La giornata prenderà una piega inaspettata",
-"Mangia un gelato e tutto andrà per il meglio",
-"",
+"Viziati e tutto andrà per il meglio",
 "puoi farcela, sei una persona forte",
 "Prenditi del tempo per te, te lo meriti",
 "si",
+"Abbi fede",
+"Prova con la tua canzone preferita!",
 
 );
 
